@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.AddActivity"
+    android:padding="10dp"
+    android:background="@color/dark_grey">
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mona_sans_semibold"
+        android:textColor="@color/light_grey_text"
+        android:textSize="28sp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"
+        android:text="Repo Name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_add_reponame"
+        android:layout_width="0dp"
+        android:background="@drawable/et_back"
+        tools:text="sadfsadfsdakh"
+        android:textColor="@color/light_grey_text"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:layout_marginVertical="10dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_add_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mona_sans_semibold"
+        android:textColor="@color/light_grey_text"
+        android:textSize="28sp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_reponame"
+        android:text="Owner Name" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_add_ownername"
+        android:layout_width="0dp"
+        android:background="@drawable/et_back"
+        android:padding="10dp"
+        android:layout_marginVertical="10dp"
+        android:textSize="18sp"
+        tools:text="fdsfdfgdf"
+        android:maxLines="1"
+        android:textColor="@color/light_grey_text"
+        android:fontFamily="@font/mona_sans_regular"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_owner" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".6"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/github_anim" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintVertical_bias="0.2"
+        android:text="Add Repository"
+        android:textAllCaps="false"
+        android:fontFamily="@font/mona_sans_semibold"
+        android:textColor="@color/light_grey_text"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:background="@drawable/et_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_ownername" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
